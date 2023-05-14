@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+
+:root {
+    --clr-accent-1: hsl(0, 78%, 62%);
+    --clr-accent-2: hsl(180, 62%, 55%);
+    --clr-accent-3: hsl(34, 97%, 64%);
+    --clr-accent-4: hsl(212, 86%, 64%);
+
+    --clr-neutral-100: hsl(0, 0%, 98%);
+    --clr-neutral-400: hsl(229, 6%, 66%);
+    --clr-neutral-500: hsl(234, 12%, 34%);
+
+    --shadow: hsl(234, 12%, 34%, .1);
+
+    --fw-light: 200;
+    --fw-normal: 400;
+    --fw-bold: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    background: var(--clr-neutral-100);
+    margin: 5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.product-header1 {
+    font-weight: var(--fw-light);
+    color: var(--clr-neutral-500);
+}
+
+.product-header2 {
+    font-weight: var(--fw-bold);
+    color: var(--clr-neutral-500);
+}
+
+.product-header1,
+.product-header2 {
+    font-size: 1.5rem;
+}
+
+.product-desc {
+    color: var(--clr-neutral-400);
+    font-size: 15px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.card {
+    box-shadow: 0 3px 10px 3px var(--shadow);
+    border-radius: .5rem;
+    text-align: left;
+    padding: 1rem 1.5rem;
+    overflow: hidden;
+    height: 220px;
+    width: 350px;
+    background: #fff;
+}
+
+.card-supervisor {
+    border-top: 4px solid var(--clr-accent-2);
+}
+
+.card-builder {
+    border-top: 4px solid var(--clr-accent-1);
+}
+
+.card-karma {
+    border-top: 4px solid var(--clr-accent-3);
+}
+
+.card-calculator {
+    border-top: 4px solid var(--clr-accent-4);
+}
+
+.card-header {
+    color: var(--clr-neutral-500);
+}
+
+.card-text {
+    font-size: 15px;
+    color: var(--clr-neutral-400);
+}
+
+.card-karma .card-text {
+    width: 250px;
+}
+
+.card-calculator .card-text {
+    width: 250px;
+}
+
+.icon {
+    margin: 2rem 0 0 70%;
+}
+
+@media (width > 1200px) {
+    body {
+        margin: 0;
+    }
+
+    .product-header1,
+    .product-header2 {
+        font-size: 2.2rem;
+    }
+
+    .product-desc {
+        width: 500px;
+        margin-bottom: 4rem !important;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .card-supervisor {
+        border-top: 4px solid var(--clr-accent-2);
+    }
+
+    .card-builder {
+        border-top: 4px solid var(--clr-accent-1);
+    }
+
+    .card-karma .card-text {
+        width: 300px;
+    }
+
+    .card-calculator .card-text {
+        width: 300px;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.signature {
+    color: #f00;
+    font-weight: 600;
+}
+
+/* Utilities */
+
+.mb-05 {
+    margin-bottom: .5rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mb-3 {
+    margin-bottom: 3rem;
+}
